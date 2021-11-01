@@ -1,14 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/code,linux,macos,sublimetext,vim,windows,zsh
-# Edit at https://www.toptal.com/developers/gitignore?templates=code,linux,macos,sublimetext,vim,windows,zsh
-
-### Code ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,sublimetext,vim,visualstudiocode,windows,zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,sublimetext,vim,visualstudiocode,windows,zsh
 
 ### Linux ###
 *~
@@ -33,6 +25,7 @@
 
 # Icon must end with two \r
 Icon
+
 
 # Thumbnails
 ._*
@@ -68,6 +61,7 @@ Temporary Items
 
 # SFTP configuration file
 sftp-config.json
+sftp-config-alt*.json
 
 # Package control specific files
 Package Control.last-run
@@ -104,6 +98,22 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -143,8 +153,8 @@ $RECYCLE.BIN/
 .zcalc_history
 
 # A popular plugin manager's files
-._zplugin
-.zplugin_lstupd
+._zinit
+.zinit_lstupd
 
 # zdharma/zshelldoc tool's files
 zsdoc/data
@@ -161,4 +171,4 @@ zsdoc/data
 /tests/_output/*
 !/tests/_output/.gitkeep
 
-# End of https://www.toptal.com/developers/gitignore/api/code,linux,macos,sublimetext,vim,windows,zsh
+# End of https://www.toptal.com/developers/gitignore/api/linux,macos,sublimetext,vim,visualstudiocode,windows,zsh
