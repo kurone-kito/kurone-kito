@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,sublimetext,vim,visualstudiocode,windows,zsh
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,sublimetext,vim,visualstudiocode,windows,zsh
 
@@ -45,6 +44,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
 ### SublimeText ###
 # Cache files for Sublime Text
@@ -105,15 +108,24 @@ tags
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
+
+# Built Visual Studio Code Extensions
+*.vsix
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
 .ionide
+
+# Support for Project snippet scope
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
 
 ### Windows ###
 # Windows thumbnail cache files
