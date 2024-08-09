@@ -2,6 +2,7 @@
 
 ## Features
 
+- Git attributes
 - Visual Studio Code integration
 
 ## License
