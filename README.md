@@ -2,6 +2,8 @@
 
 ## Features
 
+- Visual Studio Code integration
+
 ## License
 
 MIT
