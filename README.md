@@ -6,6 +6,8 @@
   - ImgBot
 - Documents for GitHub
 - Git attributes
+- Linters
+  - EditorConfig
 - Visual Studio Code integration
 
 ## License
