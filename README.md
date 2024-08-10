@@ -2,6 +2,7 @@
 
 ## Features
 
+- Documents for GitHub
 - Git attributes
 - Visual Studio Code integration
 

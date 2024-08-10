@@ -2,6 +2,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
+    "*.md": "${capture}.*.md",
     ".gitattributes": ".gitignore"
   },
   "files.associations": {
