@@ -10,6 +10,7 @@
 - Linters
   - CSpell
   - EditorConfig
+  - MarkdownLint
 - Visual Studio Code integration
 
 ## License
