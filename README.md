@@ -3,6 +3,7 @@
 ## Features
 
 - CI/CD
+  - CodeRabbit
   - ImgBot
 - Documents for GitHub
 - Git attributes
