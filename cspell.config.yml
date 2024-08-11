@@ -1,0 +1,26 @@
+allowCompoundWords: true
+dictionaries:
+  - en_US
+  - en-gb
+  - eo
+  - git
+  - lorem-ipsum
+  - markdown
+  - misc
+  - softwareTerms
+enableGlobDot: true
+features:
+  weighted-suggestions: true
+globRoot: ${cwd}
+ignorePaths:
+  - .*ignore
+  - .git
+  - .github/CODE_OF_CONDUCT.*
+  - .vscode/extensions.json
+  - cspell.config.yml
+language: en,eo,ja
+words:
+  - kito
+  - kuron
+  - kuroné
+version: '0.2'

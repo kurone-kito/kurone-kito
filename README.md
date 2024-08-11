@@ -8,6 +8,7 @@
 - Documents for GitHub
 - Git attributes
 - Linters
+  - CSpell
   - EditorConfig
 - Visual Studio Code integration
 
