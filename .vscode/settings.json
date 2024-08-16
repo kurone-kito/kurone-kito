@@ -1,0 +1,22 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.md": "${capture}.*.md",
+    ".gitattributes": ".gitignore",
+    ".markdownlint.*": ".markdownlint-cli2.*"
+  },
+  "files.associations": {
+    ".imgbotconfig": "json",
+    "LICENSE": "plaintext"
+  },
+  "git.branchProtection": ["main"],
+  "yaml.schemas": {
+    "https://coderabbit.ai/integrations/coderabbit-overrides.v2.json": [
+      ".coderabbit.yaml"
+    ],
+    "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json": [
+      "cspell.config.yml"
+    ]
+  }
+}
