@@ -6,6 +6,7 @@
     ".gitattributes": ".gitignore"
   },
   "files.associations": {
+    ".imgbotconfig": "json",
     "LICENSE": "plaintext"
   },
   "git.branchProtection": ["master"],
