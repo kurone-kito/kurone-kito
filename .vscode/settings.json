@@ -1,4 +1,13 @@
 {
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.md": "${capture}.*.md"
+  },
+  "files.associations": {
+    "LICENSE": "plaintext"
+  },
+  "git.branchProtection": ["master"],
   "yaml.schemas": {
     "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json": [
       "cspell.config.yml"
