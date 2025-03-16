@@ -10,11 +10,22 @@ I'm web frontend engineer and VTuber 🐱
 
 ### [**🦁 Dantalion**: The app to find your personality based on your date of birth.](https://kurone-kito.github.io/dantalion/)
 
-- ![Web app](https://img.shields.io/badge/-Web_app-303) ![CLI app](https://img.shields.io/badge/-CLI_app-033) ![Node.js library](https://img.shields.io/badge/-Node.js_library-000)
+- ![Web app](https://img.shields.io/badge/-Web_app-303)
+  ![CLI app](https://img.shields.io/badge/-CLI_app-033)
+  ![Node.js library](https://img.shields.io/badge/-Node.js_library-000)
 
-“Dantalion” is the seventy-first demon in the demonological grimoire, _[the Lesser Key of Solomon](https://en.wikipedia.org/wiki/The_Lesser_Key_of_Solomon)_. He teaches all kinds of academic knowledge, but he can also read and manipulate others’ hearts.
+“Dantalion” is the seventy-first demon in the demonological grimoire,
+_[the Lesser Key of Solomon](https://en.wikipedia.org/wiki/The_Lesser_Key_of_Solomon)_.
+He teaches all kinds of academic knowledge, but he can also read and
+manipulate others’ hearts.
 
-If you can predict the other person’s character, you can increase the possibility of controlling the other person’s will. This library and web app provides a feature that **infers the personality details from the specified birthday**. By using this package, you can quickly implement birthday divination in your Node.js apps. Its calculation is using the method of _Four Pillars of Destiny (Ba-Zi)_.
+If you can predict the other person’s character, you can increase the
+possibility of controlling the other person’s will.
+This library and web app provides a feature that
+**infers the personality details from the specified birthday**.
+By using this package,
+you can quickly implement birthday divination in your Node.js apps.
+Its calculation is using the method of _Four Pillars of Destiny (Ba-Zi)_.
 
 ### [**📄 <職歴書>**: shokurekisho-docx-cli](https://github.com/kurone-kito/shokurekisho-docx-cli)
 
@@ -113,7 +124,8 @@ NICE TO MEET YOU!
 ![🐱](https://raw.githubusercontent.com/kurone-kito/kurone-kito/master/kito01.jpg)
 
 <!--
-**kurone-kito/kurone-kito** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**kurone-kito/kurone-kito** is a ✨ _special_ ✨ repository
+because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
