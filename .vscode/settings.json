@@ -1,17 +1,22 @@
 {
-  "cSpell.ignorePaths": [
-    ".git/objects",
-    ".github/CODE_OF_CONDUCT.*",
-    ".vscode"
-  ],
-  "cSpell.words": [
-    "alexa",
-    "grimoire",
-    "kito",
-    "Kuroné",
-    "niconico",
-    "pixiv",
-    "qiita",
-    "shokurekisho"
-  ]
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.md": "${capture}.*.md",
+    ".gitattributes": ".gitignore",
+    ".markdownlint.*": ".markdownlint-cli2.*"
+  },
+  "files.associations": {
+    ".imgbotconfig": "json",
+    "LICENSE": "plaintext"
+  },
+  "git.branchProtection": ["master"],
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json": [
+      "cspell.config.yml"
+    ],
+    "https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json": [
+      ".coderabbit.yaml"
+    ]
+  }
 }
