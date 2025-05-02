@@ -1,4 +1,4 @@
-# 📄 My generic template
+# 📄 Generic repository template
 
 ## Features
 
