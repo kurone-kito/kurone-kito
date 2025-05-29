@@ -13,5 +13,5 @@ jobs:
         with:
           exempt-issue-labels: bug,enhancement
           exempt-pr-labels: bug,enhancement
-          stale-issue-message: StaleBot labeled the issue as staled because there has been no activity.
+          stale-issue-message: StaleBot marked the issue as stale because there has been no activity.
           stale-issue-label: stale
