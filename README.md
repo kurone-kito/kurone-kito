@@ -1,5 +1,7 @@
 # 📄 Generic repository template
 
+[![Linting](https://github.com/kurone-kito/template/actions/workflows/lint.yml/badge.svg)](https://github.com/kurone-kito/template/actions/workflows/lint.yml)
+
 ## Features
 
 - CI/CD
