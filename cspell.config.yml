@@ -2,9 +2,7 @@ allowCompoundWords: true
 dictionaries:
   - en_US
   - en-gb
-  - eo
   - git
-  - lorem-ipsum
   - markdown
   - misc
   - softwareTerms
