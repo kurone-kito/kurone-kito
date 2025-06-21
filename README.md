@@ -5,14 +5,14 @@
 ## Features
 
 - CI/CD
-  - CodeRabbit
-  - ImgBot
+  - [CodeRabbit](https://www.coderabbit.ai/)
+  - [ImgBot](https://imgbot.net/)
 - Documents for GitHub
 - Git attributes
 - Linters
-  - CSpell
-  - EditorConfig
-  - MarkdownLint
+  - [CSpell](https://cspell.org/)
+  - [EditorConfig](https://editorconfig.org/)
+  - [MarkdownLint](https://github.com/DavidAnson/markdownlint)
 - Visual Studio Code integration
 
 ## Using this template
@@ -32,4 +32,4 @@
 
 ## License
 
-MIT
+[MIT](./LICENSE)
