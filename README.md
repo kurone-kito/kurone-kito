@@ -7,6 +7,8 @@
 - CI/CD
   - [CodeRabbit](https://www.coderabbit.ai/)
   - [ImgBot](https://imgbot.net/)
+  - Linting on GitHub Actions
+  - Stale issues and pull requests management on GitHub Actions
 - Documents for GitHub
 - Git attributes
 - Linters
