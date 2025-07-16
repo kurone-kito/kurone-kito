@@ -19,10 +19,12 @@ ignorePaths:
   - .vscode/extensions.json
   - cspell.config.yml
 language: en,eo,ja
+useGitignore: true
+version: "0.2"
 words:
+  - imgbotconfig
   - kito
   - kuroné
   - pixiv
   - qiita
   - shokurekisho
-version: '0.2'
