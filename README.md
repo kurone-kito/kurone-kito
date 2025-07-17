@@ -117,7 +117,7 @@ ARM64 is supported on Windows 10 or 11.
 NICE TO MEET YOU!  
 ‾‾‾‾‾‾‾‾V‾‾‾‾‾‾‾‾‾‾
 
-![🐱](https://raw.githubusercontent.com/kurone-kito/kurone-kito/master/kito01.jpg)
+![🐱 Kurone Kito avatar](https://raw.githubusercontent.com/kurone-kito/kurone-kito/master/kito01.jpg)
 
 <!--
 **kurone-kito/kurone-kito** is a ✨ _special_ ✨ repository
