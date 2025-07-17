@@ -37,11 +37,10 @@ Generate a Word docx file of Japanese-style resume (職務経歴書) from JSON R
 
 - ![CLI app](https://img.shields.io/badge/-CLI_app-033)
 
-Fully automate the installation and settings of the app to make it easier
-to create an environment when you buy a new Mac.
+This script fully automates the installation and settings of the app to
+make it easier to create an environment when you buy a new Mac.
 
-This script available for macOS Monterey
-(Apple Sillicon and intel supported).
+This script is available for macOS Sonoma and later.
 
 ### [**💻 setup.windows**: Windows auto setup for develop environment](https://github.com/kurone-kito/setup.windows)
 
@@ -50,7 +49,7 @@ This script available for macOS Monterey
 In order to reinstall OS more easily when Windows is unstable,
 we fully automated the installation of some apps.
 
-This script available for Windows 8.1, 10, and 11.
+This script is available for Windows 8.1, 10, and 11.
 ARM64 is supported on Windows 10 or 11.
 
 ## ✨ Favorites
