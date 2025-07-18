@@ -95,7 +95,7 @@ ARM64 is supported on Windows 10 or 11.
 [![Homepage](https://img.shields.io/badge/-https%3A%2F%2Fkit.black%2F-000?labelColor=FFF&logo=netlify&logoSize=auto)](https://kit.black/)
 [![Twitter](https://img.shields.io/badge/-%40kurone__kito-000?labelColor=CCC&logo=x&logoColor=333&logoSize=auto)](https://x.com/kurone_kito)
 [![YouTube](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=youtube&logoColor=F00&logoSize=auto)](https://youtube.com/c/kuronekito)
-[![Twitch](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=twitch&logoSize=auto)](https://www.twitch.tv/kurone_kito)  
+[![Twitch](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=twitch&logoSize=auto)](https://www.twitch.tv/kurone_kito)
 [![npm](https://img.shields.io/badge/-%40kurone--kito-000?labelColor=FFF&logo=npm&logoColor=CC3534&logoSize=auto)](https://www.npmjs.com/~kurone-kito)
 [![VRChat](https://img.shields.io/badge/-kurone--kito-000?labelColor=FFF&logo=VRChat&logoColor=000&logoSize=auto)](https://vrchat.com/home/user/usr_4e529c16-8045-47fa-8deb-efeec9d73cba)
 [![Stack Overflow](https://img.shields.io/badge/-kurone--kito-000?logo=stackoverflow&logoSize=auto)](https://stackoverflow.com/users/10965755/kurone-kito)
