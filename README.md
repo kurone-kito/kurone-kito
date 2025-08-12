@@ -37,11 +37,10 @@ Generate a Word docx file of Japanese-style resume (職務経歴書) from JSON R
 
 - ![CLI app](https://img.shields.io/badge/-CLI_app-033)
 
-Fully automate the installation and settings of the app to make it easier
-to create an environment when you buy a new Mac.
+This script fully automates the installation and settings of the app to
+make it easier to create an environment when you buy a new Mac.
 
-This script available for macOS Monterey
-(Apple Sillicon and intel supported).
+This script is available for macOS Sonoma and later.
 
 ### [**💻 setup.windows**: Windows auto setup for develop environment](https://github.com/kurone-kito/setup.windows)
 
@@ -50,7 +49,7 @@ This script available for macOS Monterey
 In order to reinstall OS more easily when Windows is unstable,
 we fully automated the installation of some apps.
 
-This script available for Windows 8.1, 10, and 11.
+This script is available for Windows 8.1, 10, and 11.
 ARM64 is supported on Windows 10 or 11.
 
 ## ✨ Favorites
@@ -96,9 +95,9 @@ ARM64 is supported on Windows 10 or 11.
 [![Homepage](https://img.shields.io/badge/-https%3A%2F%2Fkit.black%2F-000?labelColor=FFF&logo=netlify&logoSize=auto)](https://kit.black/)
 [![Twitter](https://img.shields.io/badge/-%40kurone__kito-000?labelColor=CCC&logo=x&logoColor=333&logoSize=auto)](https://x.com/kurone_kito)
 [![YouTube](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=youtube&logoColor=F00&logoSize=auto)](https://youtube.com/c/kuronekito)
-[![Twitch](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=twitch&logoSize=auto)](https://www.twitch.tv/kurone_kito)  
+[![Twitch](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=twitch&logoSize=auto)](https://www.twitch.tv/kurone_kito)
 [![npm](https://img.shields.io/badge/-%40kurone--kito-000?labelColor=FFF&logo=npm&logoColor=CC3534&logoSize=auto)](https://www.npmjs.com/~kurone-kito)
-[![VRChat](https://img.shields.io/badge/-kurone--kito-000?labelColor=FFF&logo=VRChat&logoColor=000&logoSize=auto)](https://www.npmjs.com/~kurone-kito)
+[![VRChat](https://img.shields.io/badge/-kurone--kito-000?labelColor=FFF&logo=VRChat&logoColor=000&logoSize=auto)](https://vrchat.com/home/user/usr_4e529c16-8045-47fa-8deb-efeec9d73cba)
 [![Stack Overflow](https://img.shields.io/badge/-kurone--kito-000?logo=stackoverflow&logoSize=auto)](https://stackoverflow.com/users/10965755/kurone-kito)
 [![Qiita](https://img.shields.io/badge/-kurone--kito-000?logo=qiita&logoSize=auto)](https://qiita.com/kurone-kito)
 [![Docker](https://img.shields.io/badge/-kuronekito-000?logo=docker&logoSize=auto)](https://hub.docker.com/u/kuronekito)
@@ -117,7 +116,7 @@ ARM64 is supported on Windows 10 or 11.
 NICE TO MEET YOU!  
 ‾‾‾‾‾‾‾‾V‾‾‾‾‾‾‾‾‾‾
 
-![🐱](https://raw.githubusercontent.com/kurone-kito/kurone-kito/master/kito01.jpg)
+![🐱 Kurone Kito avatar](https://raw.githubusercontent.com/kurone-kito/kurone-kito/master/kito01.jpg)
 
 <!--
 **kurone-kito/kurone-kito** is a ✨ _special_ ✨ repository
