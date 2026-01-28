@@ -5,6 +5,7 @@ I'm web frontend engineer and VTuber 🐱
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?border_color=036&border_radius=28&count_private=true&include_all_commits=true&line_height=24&show_icons=true&theme=tokyonight&username=kurone-kito)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?border_color=036&border_radius=28&card_width=445&count_private=true&exclude_repo=mic-test-for-oculus-quest&langs_count=8&layout=compact&show_icons=true&theme=tokyonight&username=kurone-kito)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub Planet](https://image.thum.io/get/width/800/crop/400/noanimate/wait/8/https://githubplanet.onrender.com/card.html?username=kurone-kito&fix=true&time=1769573366930)](https://githubplanet.onrender.com/)
 
 ## My products
 
@@ -55,7 +56,6 @@ ARM64 is supported on Windows 10 or 11.
 ## ✨ Favorites
 
 [![Serverless](https://img.shields.io/badge/-Serverless-000?logo=serverless&logoSize=auto)](https://www.serverless.com/)
-[![Amazon Lambda](https://img.shields.io/badge/-Lambda-000?logo=awslambda&logoSize=auto)](https://aws.amazon.com/dynamodb/)
 [![Auth0](https://img.shields.io/badge/-Auth0-000?logo=auth0&logoSize=auto)](https://auth0.com/)
 [![GraphQL](https://img.shields.io/badge/-GraphQL-000?logo=graphql&logoColor=E10098&logoSize=auto)](https://graphql.org/)
 [![Docker](https://img.shields.io/badge/-Docker-000?logo=docker&logoSize=auto)](https://www.docker.com/)
@@ -65,7 +65,6 @@ ARM64 is supported on Windows 10 or 11.
 [![Vagrant](https://img.shields.io/badge/-Vagrant-000?logo=vagrant&logoColor=1868F2&logoSize=auto)](https://www.vagrantup.com/)
 [![Expo](https://img.shields.io/badge/-Expo-000?logo=expo&logoSize=auto)](https://expo.dev/)
 [![Node.js](https://img.shields.io/badge/-Node.js-000?logo=nodedotjs&logoSize=auto)](https://nodejs.org/)
-[![Amazon Alexa](https://img.shields.io/badge/-Amazon_Alexa-000?logo=amazonalexa&logoSize=auto)](https://developer.amazon.com/alexa)
 [![Vim](https://img.shields.io/badge/-Vim-000?logo=vim&logoColor=019733&logoSize=auto)](https://www.vim.org/)
 [![Unity](https://img.shields.io/badge/-Unity-000?logo=unity&logoSize=auto)](https://unity.com/)
 [![React](https://img.shields.io/badge/-React-000?logo=React&logoSize=auto)](https://reactjs.org/)
@@ -84,10 +83,6 @@ ARM64 is supported on Windows 10 or 11.
 [![Cypress](https://img.shields.io/badge/-Cypress-000?logo=cypress&logoSize=auto)](https://www.cypress.io/)
 [![Storybook](https://img.shields.io/badge/-Storybook-000?logo=storybook&logoSize=auto)](https://storybook.js.org/)
 [![Blender](https://img.shields.io/badge/-Blender-000?logo=blender&logoSize=auto)](https://www.blender.org/)
-[![Adobe Illustrator](https://img.shields.io/badge/-Illustrator-000?logo=adobeillustrator&logoSize=auto)](https://www.adobe.com/products/illustrator.html)
-[![Adobe Photoshop](https://img.shields.io/badge/-Photoshop-000?logo=adobephotoshop&logoSize=auto)](https://www.adobe.com/products/photoshop.html)
-[![Adobe After Effects](https://img.shields.io/badge/-AfterEffects-000?logo=adobeaftereffects&logoSize=auto)](https://www.adobe.com/products/aftereffects.html)
-[![Adobe Premiere Pro](https://img.shields.io/badge/-Premiere_Pro-000?logo=adobepremierepro&logoSize=auto)](https://www.adobe.com/products/premiere.html)
 
 ## 🐱 Links to my page
 
@@ -98,17 +93,17 @@ ARM64 is supported on Windows 10 or 11.
 [![Twitch](https://img.shields.io/badge/-kurone__kito-000?labelColor=FFF&logo=twitch&logoSize=auto)](https://www.twitch.tv/kurone_kito)
 [![npm](https://img.shields.io/badge/-%40kurone--kito-000?labelColor=FFF&logo=npm&logoColor=CC3534&logoSize=auto)](https://www.npmjs.com/~kurone-kito)
 [![VRChat](https://img.shields.io/badge/-kurone--kito-000?labelColor=FFF&logo=VRChat&logoColor=000&logoSize=auto)](https://vrchat.com/home/user/usr_4e529c16-8045-47fa-8deb-efeec9d73cba)
+[![Bluesky](https://img.shields.io/badge/-kurone--kito.bsky.social-000?logo=bluesky&logoSize=auto)](https://bsky.app/profile/kurone-kito.bsky.social)
+[![Pixiv](https://img.shields.io/badge/-43011580-000?logo=pixiv&logoSize=auto)](https://www.pixiv.net/users/43011580)
 [![Stack Overflow](https://img.shields.io/badge/-kurone--kito-000?logo=stackoverflow&logoSize=auto)](https://stackoverflow.com/users/10965755/kurone-kito)
 [![Qiita](https://img.shields.io/badge/-kurone--kito-000?logo=qiita&logoSize=auto)](https://qiita.com/kurone-kito)
 [![Docker](https://img.shields.io/badge/-kuronekito-000?logo=docker&logoSize=auto)](https://hub.docker.com/u/kuronekito)
 [![Steam](https://img.shields.io/badge/-kurone__kito-000?logo=steam&logoSize=auto)](https://steamcommunity.com/id/kurone_kito/)
 ![origin](https://img.shields.io/badge/-kito--kurone-000?logo=origin&logoSize=auto)
-[![Pixiv](https://img.shields.io/badge/-kurone__kito-000?logo=pixiv&logoSize=auto)](https://www.pixiv.net/users/43011580)
 [![Facebook](https://img.shields.io/badge/-kurone.kito-000?logo=facebook&logoSize=auto)](https://www.facebook.com/krone.kito/)
-[![Instagram](https://img.shields.io/badge/-kurone__kito-000?logo=instagram&logoSize=auto)](https://www.instagram.com/kurone_kito/)
+[![Instagram](https://img.shields.io/badge/-kurone__kito-000?logo=instagram&logoSize=auto&logoColor=FF0069)](https://www.instagram.com/kurone_kito/)
 [![Threads](https://img.shields.io/badge/-kurone.kito-000?logo=threads&logoSize=auto)](https://www.threads.net/@kurone_kito)
 [![Keybase](https://img.shields.io/badge/-kurone__kito-000?logo=keybase&logoSize=auto)](https://keybase.io/kurone_kito)
-[![LinkedIn](https://img.shields.io/badge/-kurone--kito-000?logo=linkedin&logoColor=0A66C2&logoSize=auto)](https://www.linkedin.com/in/kurone-kito/)
 [![niconico](https://img.shields.io/badge/-87247457-000?logo=niconico&logoColor=F3E8E5&logoSize=auto)](https://www.nicovideo.jp/user/87247457)
 
 **[![Donate me❤️My Amazon.JP Wishlist](https://img.shields.io/badge/-%2ADonate_me%E2%9D%A4My_Amazon.JP_wishlist%2A-000?color=EAEDED&labelColor=232F3E&logo=amazon&logoSize=auto&style=for-the-badge)](https://www.amazon.co.jp/hz/wishlist/ls/27C22EN4MOBL8)**
