@@ -11,6 +11,9 @@
     "LICENSE": "plaintext"
   },
   "git.branchProtection": ["master"],
+  "material-icon-theme.files.associations": {
+    ".imgbotconfig": "robots"
+  },
   "yaml.schemas": {
     "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json": [
       "cspell.config.yml"

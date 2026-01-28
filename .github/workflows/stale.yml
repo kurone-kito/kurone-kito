@@ -1,17 +1,17 @@
 name: Mark stale issues
 on:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: "0 0 * * 1"
 permissions:
   issues: write
   pull-requests: write
 jobs:
   stale:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
-          days-before-close: 7
+          days-before-close: 14
           days-before-stale: 60
           close-issue-message: StaleBot closed the issue due to prolonged inactivity.
           close-pr-message: StaleBot closed the pull request due to prolonged inactivity.
