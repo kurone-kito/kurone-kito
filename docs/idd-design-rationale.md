@@ -735,15 +735,15 @@ non-blocking).
 
 ## Review triage
 
-### Merge-main livelock under fast-moving `main`
+### Merge-master livelock under fast-moving `master`
 
-Under heavy concurrent-session load, `main` can advance before one
+Under heavy concurrent-session load, `master` can advance before one
 {sync path → E1 → F1/F2} cycle finishes, re-triggering
 `behind-no-conflict`; naive repetition livelocks, never reaching F3
-while `main` keeps moving. The fix is procedural, not structural: post
+while `master` keeps moving. The fix is procedural, not structural: post
 the `review-watermark` as the last action before F3's
 `idd-merge-execute.mjs --apply` on every pass, so anything that happens
-after — a CI rerun settling, a new disposition reply, another `main`
+after — a CI rerun settling, a new disposition reply, another `master`
 advance — stales it and fails `--apply` closed on `review-currency`
 rather than merging on data the retry has since invalidated.
 

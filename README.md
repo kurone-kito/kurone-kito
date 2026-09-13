@@ -31,7 +31,8 @@ Its calculation is using the method of _Four Pillars of Destiny (Ba-Zi)_.
 
 - ![CLI app](https://img.shields.io/badge/-CLI_app-033)
 
-Generate a Word docx file of Japanese-style resume (職務経歴書) from JSON Resume for cli
+Generate a Word docx file of Japanese-style resume (職務経歴書) from JSON Resume
+for cli
 
 ### [**💻 setup.macos**: macOS auto setup for develop environment](https://github.com/kurone-kito/setup.macos)
 

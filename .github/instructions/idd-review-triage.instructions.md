@@ -562,7 +562,7 @@ Route based on `branchState` from the helper (or `mergeable` /
 Under heavy concurrent-session load, `{development-branch}` can advance
 faster than one sync cycle finishes, livelocking naive retries before
 ever reaching F3 (background:
-[design rationale](../../docs/idd-design-rationale.md#merge-main-livelock-under-fast-moving-main)).
+[design rationale](../../docs/idd-design-rationale.md#merge-master-livelock-under-fast-moving-master)).
 
 **Rule**: post the watermark as the **last** action before F3's
 `idd-merge-execute.mjs --apply`, every pass — anything after (a CI
