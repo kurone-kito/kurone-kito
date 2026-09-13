@@ -581,7 +581,7 @@ report's `CODEOWNERS present` item checks only that a CODEOWNERS file
 exists; it does not verify workflow-path coverage, producer binding, or
 these required-review settings (preventive; no observed incident yet).
 
-**Trusted-code checkout.** The checkout step pins `ref: main` (adjust
+**Trusted-code checkout.** The checkout step pins `ref: master` (adjust
 if your default branch differs) rather than the PR's own head, for
 every trigger type including `workflow_dispatch`. The enforcement
 script (`scripts/advisory-convergence.mjs`) and its config
