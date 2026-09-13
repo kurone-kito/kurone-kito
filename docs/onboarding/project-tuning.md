@@ -8,7 +8,7 @@ tags: [onboarding, project-tuning]
 # Onboarding Reference — Project Tuning
 
 Use this reference after the
-[Helper-assisted path](../../ONBOARDING.md#helper-assisted-path)'s
+[Helper-assisted path](https://github.com/kurone-kito/idd-skill/blob/main/idd-template/ONBOARDING.md#helper-assisted-path)'s
 `--hear` / `--import` / `--substitute` / `--record-policy` sequence
 (or the equivalent manual Steps 1A-4) has run. It indexes the
 judgment calls that stay manual
