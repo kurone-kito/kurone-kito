@@ -115,3 +115,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,vim,visualstudiocode,windows
+
+### Node (manual addition) ###
+# npx-run tooling (cspell, markdownlint-cli2) can create this even without
+# a package.json; this repository has no Node project to track here.
+node_modules/
