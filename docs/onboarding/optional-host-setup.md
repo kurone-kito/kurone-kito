@@ -465,7 +465,7 @@ number is a pull request.
 **Protect the workflow definition with CODEOWNERS.** A
 `pull_request`-triggered workflow runs its definition from the pull
 request's synthetic merge commit/ref before any job step can perform the
-trusted `main` checkout. That checkout protects the helper and
+trusted `master` checkout. That checkout protects the helper and
 configuration that the job runs, but it cannot protect a workflow
 definition changed in the pull request. This is preventive guidance; no
 observed incident is being claimed here.
@@ -531,12 +531,12 @@ reviews, so a new CODEOWNERS file in the same PR cannot protect that
 bootstrap change (preventive; no observed incident yet).
 
 Also protect every trusted input that the workflow checks out from
-`main`, not only the workflow file — for example `/.github/idd/`,
+`master`, not only the workflow file — for example `/.github/idd/`,
 `/scripts/advisory-convergence.mjs`, and its transitive runtime inputs
 (or an immutable protected artifact). The exact set depends on the
 adopter's imports; inspect the workflow and helper before finalizing
 the entries. The current PR run cannot be weakened by PR copies of
-these paths because it checks out `main`, but later runs would trust
+these paths because it checks out `master`, but later runs would trust
 them after merge (preventive; no observed incident yet).
 
 Also review repository or organization variables that select the runner,
