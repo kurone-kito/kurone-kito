@@ -1,12 +1,20 @@
 allowCompoundWords: true
+cache:
+  cacheFormat: universal
+  cacheLocation: node_modules/.cache/cspell/.cspell.cache
+  cacheStrategy: metadata
+  useCache: true
 dictionaries:
+  - cpp
   - en_US
   - en-gb
   - eo
+  - fullstack
   - git
   - lorem-ipsum
   - markdown
   - misc
+  - shellscript
   - softwareTerms
 enableGlobDot: true
 features:
@@ -17,14 +25,52 @@ ignorePaths:
   - .git
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
-  - cspell.config.yml
+  - pnpm-lock.yaml
 language: en,eo,ja
 useGitignore: true
 version: "0.2"
 words:
+  - dedup
+  - deprioritize
+  - desync
+  - desynced
+  - dofork
+  - Esync
+  - GHEC
+  - GHES
+  - idd
   - imgbotconfig
+  - isort
   - kito
+  - Kiro
+  - kuron
+  - kurone
   - kuroné
+  - minimizable
+  - ministral
+  - nektos
+  - nvmrc
+  - ONNX
   - pixiv
+  - pylint
+  - pyproject
+  - pytest
   - qiita
+  - qwen
+  - remediations
+  - rollup
   - shokurekisho
+  - TOCTOU
+  - tsfile
+  - undispositioned
+  - unioned
+  - unmigrated
+  - unmirrored
+  - unpushed
+  - unreplied
+  - unrouted
+  - unscored
+  - unwaived
+  - vrchat
+  - waivable
+  - WHATWG
