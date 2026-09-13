@@ -430,9 +430,9 @@ workflow turns "Copilot's review converged on the current PR HEAD" from
 an instruction the execution model must choose to honor into a
 status check GitHub itself can enforce. It is opt-in — the template
 already mirrors the workflow at
-[`idd-template/.github/workflows/idd-advisory-convergence.yml`](../../.github/workflows/idd-advisory-convergence.yml)
+[`idd-template/.github/workflows/idd-advisory-convergence.yml`](https://github.com/kurone-kito/idd-skill/blob/adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d/idd-template/.github/workflows/idd-advisory-convergence.yml)
 and its comment-refresh companion
-[`idd-template/.github/workflows/idd-advisory-convergence-comment.yml`](../../.github/workflows/idd-advisory-convergence-comment.yml);
+[`idd-template/.github/workflows/idd-advisory-convergence-comment.yml`](https://github.com/kurone-kito/idd-skill/blob/adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d/idd-template/.github/workflows/idd-advisory-convergence-comment.yml);
 copy both files into your repository's `.github/workflows/` to
 enable it. Register only the required job id
 `idd-advisory-convergence` as a status check — the companion is
