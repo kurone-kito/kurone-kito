@@ -1,0 +1,41 @@
+{
+  "$schema": "https://kurone-kito.github.io/idd-skill/schemas/policy.schema.json",
+  "iddVersion": "0.11.0",
+  "markerPrefix": "kurone-kito",
+  "mergePolicy": "fully_autonomous_merge",
+  "reviewPolicy": "copilot-advisory",
+  "threadResolutionPolicy": "fast-agent-resolve",
+  "claimTiming": {
+    "staleAge": "PT24H",
+    "heartbeatInterval": "PT12H"
+  },
+  "trustedMarkerActors": [
+    "kurone-kito"
+  ],
+  "workshop": {
+    "exampleRepository": ""
+  },
+  "commands": {
+    "install-deps": "true",
+    "fix-validate": "npx -y markdownlint-cli2 --fix '**/*.md'",
+    "pre-push-validate": "npx -y cspell lint --no-progress --show-suggestions -u '**' && npx -y markdownlint-cli2 '**/*.md'",
+    "post-fix-validate": "npx -y markdownlint-cli2 --fix '**/*.md' && npx -y cspell lint --no-progress --show-suggestions -u '**' && npx -y markdownlint-cli2 '**/*.md'"
+  },
+  "issueScope": "roadmap-first",
+  "orphanFirstPolicy": "none",
+  "advisoryWait": {
+    "convergenceScope": "all-prs"
+  },
+  "autopilotSuitability": {
+    "floor": 3
+  },
+  "ciWait": {
+    "rerunPolicy": "rerun-once"
+  },
+  "maintainerApprovalActorPolicy": "owners-and-maintainers-only",
+  "helperRuntime": {
+    "profile": "ephemeral-npx",
+    "packageSpec": "github:kurone-kito/idd-skill#adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d"
+  },
+  "developmentBranch": "master"
+}
