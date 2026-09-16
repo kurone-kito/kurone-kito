@@ -10,6 +10,29 @@ This repository uses the following IDD policies:
 
 **Policy**: `fully_autonomous_merge`
 
+**Enforcement (recorded 2026-09-16, issue #31, PR #37)**: at bootstrap
+(#18/PR #29) this policy was opted into while `master` had no
+GitHub-enforced required status check and `required_approving_review_count:
+0` — the gate existed only by IDD convention, not by server-side
+requirement. Issue #31 closed that gap: `master` now has classic branch
+protection requiring the `lint` status check
+(`required_status_checks.checks: [{context: "lint", app_id: 15368}]`,
+`strict: false`, matching this repository's `Up-to-Date-Head Ruleset:
+disabled` policy) with `enforce_admins: true`, so the requirement applies
+even to the automation token's own admin-level access — not merely to
+non-admin contributors. This coexists with, and does not replace or
+weaken, the two active rulesets (`main`, `features`) and their
+`copilot_code_review` / `pull_request` rules. Verified via
+`gh api repos/kurone-kito/kurone-kito/branches/master/protection` and
+`gh api repos/kurone-kito/kurone-kito/rulesets/20747408` (rules unchanged,
+same `updated_at`) rather than by convention alone.
+
+This GitHub-side mutation (repository administration write) was applied
+directly by the operator's own authenticated session as a one-off,
+explicitly authorized action outside the normal autonomous IDD claim/A4.5
+scope — see the Credential Scope section below, which this repository's
+autonomous IDD sessions remain bound by.
+
 ## PR Review Policy
 
 **Profile**: `copilot-advisory`
