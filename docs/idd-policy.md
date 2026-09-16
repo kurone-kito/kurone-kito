@@ -66,40 +66,48 @@ read/write, actions read); no publish or deployment secrets required`
 
 ## Required-Check-Read Trust
 
-**Policy**: `ciGate.trustEmptyProtectionReads: true` (recorded
-2026-09-16, in response to issue #19's PR #32 first hitting the F2 gate
-under the fail-closed default).
+**Policy**: `ciGate.trustEmptyProtectionReads: false` (reverted to the
+fail-closed default 2026-09-16, issue #31/PR #37, superseding the
+`true` value recorded 2026-09-16 for issue #19's PR #32).
+`ciGate.trustSourcePinnedRequiredChecks: true` (recorded the same day,
+issue #31/PR #37).
 
-By default, a `404` from the branch-protection or ruleset read
-endpoints is treated as unreadable (same as a `403`), since neither
-endpoint documents `403` as a possible response and a `404` can mask a
-permission failure. This repository's automation token was verified to
-carry full read access to every endpoint this flag makes fail-open:
-`repos/kurone-kito/kurone-kito` permissions report `admin: true`; the
-rulesets **list** endpoint (`GET /repos/{owner}/{repo}/rulesets`)
-returns `200`; and the rulesets **detail** endpoint (`GET
-/repos/{owner}/{repo}/rulesets/{id}`) also returns `200` for both of
-this repository's current rulesets (id `20747408`, "main"; id
-`20747418`, "features") — a ruleset-list `200` alone does not prove the
-per-ruleset detail read is authorized, so this was checked separately.
-This repository has no classic branch protection configured — it
-relies on rulesets only, so the classic-protection `404` is genuinely
-empty rather than a permission gap. This mirrors the "no
-required-status-check rule"
-gap already disclosed and accepted during #18's bootstrap hearing (see
-Merge Policy above and issue #31, which tracks adding an actual
-GitHub-enforced required-check gate). This opt-in is not a permanent
-substitute for an enforced required-check gate: `true` turns every
-future `404` on these reads into a trusted empty result, so a later
-regression in the automation token's endpoint access (a scope change,
-a re-issued token, an org policy change) could make a genuinely
-unreadable state look like "no required checks configured" instead of
-holding. Revalidate this flag (repeat the `admin: true` /
-rulesets-list-`200` / rulesets-detail-`200` checks above) after any
-change to the automation token's
-permissions or this repository's branch-protection/ruleset
-configuration, and revisit it once #31 lands enforced branch
-protection.
+**`trustEmptyProtectionReads` history.** By default, a `404` from the
+branch-protection or ruleset read endpoints is treated as unreadable
+(same as a `403`), since neither endpoint documents `403` as a possible
+response and a `404` can mask a permission failure. This repository
+briefly opted into trusting a genuine `404` as "no required checks
+configured" (`true`) between issue #19's PR #32 and issue #31's PR #37
+(both 2026-09-16), while `master` had no classic branch
+protection and the automation token's read access to the relevant
+endpoints had been separately verified (`admin: true`; rulesets list
+and detail endpoints both `200`). Issue #31 removed the underlying
+condition this opt-in existed for: `master` now has classic branch
+protection (see Merge Policy above), so `GET
+/repos/{owner}/{repo}/branches/master/protection` now genuinely
+returns `200`, not `404` — there is no longer an empty-read case for
+this flag to trust. Leaving it `true` would only be a latent risk: a
+future regression that accidentally removes or breaks that protection
+would produce a real `404` that this flag would silently trust as
+"nothing configured" instead of holding. The flag was reverted to
+`false` (the fail-closed default) for that reason, not merely left in
+place because "there's no harm."
+
+**`trustSourcePinnedRequiredChecks`.** Issue #31's classic-protection
+required check pins the `lint` context to a specific producer
+(`app_id: 15368`, the standard GitHub Actions app) rather than
+accepting any check named `lint` from any source — the security-safer
+choice, but one the IDD readiness gate downgrades to
+`source-pinned`/`unknown` by default even when the check is green,
+since this codebase does not itself verify producer identity anywhere
+in its check-run reads. Verified out-of-band before opting in: `.github/workflows/lint.yml`
+is this repository's only workflow producing a check named `lint`, and
+GitHub Actions (`app_id: 15368`) is the sole possible producer for a
+same-repository workflow run — no external integration can post a
+same-named check under that `app_id`. Revalidate this flag (confirm no
+new workflow or external integration could produce a same-named `lint`
+check) if `lint.yml` is ever renamed, split, or if a second CI producer
+is introduced.
 
 ## Issue-Author Approval Gate
 
