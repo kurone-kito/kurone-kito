@@ -1,0 +1,17 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+name: IDD doctor health gate
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+jobs:
+  idd-doctor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Bootstrap placeholder (D2 dispatch-first rollout)
+        run: echo "idd-doctor bootstrap registered on the default branch; the real job body lands in the follow-up PR (see issue 20)."
