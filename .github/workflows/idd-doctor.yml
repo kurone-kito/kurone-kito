@@ -13,5 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Bootstrap placeholder (D2 dispatch-first rollout)
-        run: echo "idd-doctor bootstrap registered on the default branch; the real job body lands in the follow-up PR (see issue 20)."
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24.x
+      - name: Run idd-doctor
+        run: npx --yes --package github:kurone-kito/idd-skill#adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d idd-doctor
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_ENTERPRISE_TOKEN: ${{ github.token }}
