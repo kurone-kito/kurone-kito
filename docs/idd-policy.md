@@ -131,6 +131,17 @@ files) from the pinned upstream commit
 `adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d`, installed them byte-identical
 at the destination above, and flipped this status to `installed`.
 
+**Authoring journal** (recorded 2026-09-16): `issueAuthoring.journalIssue:
+"kurone-kito/kurone-kito#38"`. Issue #38 is a comment-only, non-IDD-work-item
+tracking issue (carries `status:blocked-by-human` so Discover never
+selects it) that a standalone authoring set with no existing
+roadmap/anchor uses to record its pre-create publication-intent record,
+per the companion contract's Stage 1 set protocol. Set directly by the
+operator's own authenticated session (a one-off config change, not an
+autonomous IDD claim) so the companion's full ownership-marker protocol
+could be used for standalone issue drafting rather than falling back to
+an ad hoc simplified path.
+
 ## Helper Runtime Profile
 
 **Profile**: `ephemeral-npx`
