@@ -33,7 +33,8 @@
     "rerunPolicy": "rerun-once"
   },
   "ciGate": {
-    "trustEmptyProtectionReads": true
+    "trustEmptyProtectionReads": false,
+    "trustSourcePinnedRequiredChecks": true
   },
   "maintainerApprovalActorPolicy": "owners-and-maintainers-only",
   "helperRuntime": {
