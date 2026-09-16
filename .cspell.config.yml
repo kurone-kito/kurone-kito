@@ -26,6 +26,10 @@ ignorePaths:
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
   - pnpm-lock.yaml
+  # Byte-identical third-party copy from the pinned upstream idd-skill
+  # commit (see docs/idd-policy.md's Issue-Authoring Companion section);
+  # never reflow, since edits would break byte-identity with the source.
+  - .agents/skills/issue-authoring/**
 language: en,eo,ja
 useGitignore: true
 version: "0.2"
