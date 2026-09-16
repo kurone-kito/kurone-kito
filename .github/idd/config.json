@@ -32,6 +32,9 @@
   "ciWait": {
     "rerunPolicy": "rerun-once"
   },
+  "ciGate": {
+    "trustEmptyProtectionReads": true
+  },
   "maintainerApprovalActorPolicy": "owners-and-maintainers-only",
   "helperRuntime": {
     "profile": "ephemeral-npx",
