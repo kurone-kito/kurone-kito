@@ -59,9 +59,17 @@ the classic-protection `404` is genuinely empty rather than a
 permission gap. This mirrors the "no required-status-check rule"
 gap already disclosed and accepted during #18's bootstrap hearing (see
 Merge Policy above and issue #31, which tracks adding an actual
-GitHub-enforced required-check gate). Revisit this flag once #31 lands
-enforced branch protection — it may become unnecessary once a genuine
-`200` read is always available, but there is no harm in leaving it set.
+GitHub-enforced required-check gate). This opt-in is not a permanent
+substitute for an enforced required-check gate: `true` turns every
+future `404` on these reads into a trusted empty result, so a later
+regression in the automation token's endpoint access (a scope change,
+a re-issued token, an org policy change) could make a genuinely
+unreadable state look like "no required checks configured" instead of
+holding. Revalidate this flag (repeat the `admin: true` /
+rulesets-`200` check above) after any change to the automation token's
+permissions or this repository's branch-protection/ruleset
+configuration, and revisit it once #31 lands enforced branch
+protection.
 
 ## Issue-Author Approval Gate
 
