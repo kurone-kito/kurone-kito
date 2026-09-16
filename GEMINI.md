@@ -27,3 +27,7 @@ you pushed is waiting on either.
 See [docs/idd-policy.md](docs/idd-policy.md) for this repository's
 recorded IDD policy decisions (merge policy, review policy, credential
 scope, and the rest).
+
+The issue-authoring companion skill, which drafts or refines IDD-ready
+issues, roadmaps, and sub-issues before execution starts, is installed
+at [.agents/skills/issue-authoring/](.agents/skills/issue-authoring/).

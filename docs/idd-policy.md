@@ -88,15 +88,17 @@ protection.
 
 ## Issue-Authoring Companion
 
-**Status (this core-bootstrap issue, #18)**: `not installed` — temporary,
-core-bootstrap-only override. The hearing's real, operator-confirmed
-answer is `installed`, but issue #18 defers the actual file install to a
-separate follow-up issue.
+**Status**: `installed`
 
-**Target state (for #28 to read)**: `installed`, native destination
-`.agents/skills/issue-authoring/` (single root only; not duplicated into
-`.claude/skills/`). Issue #28 installs the companion files under this
-destination and flips this status to `installed` once it merges.
+**Destination**: `.agents/skills/issue-authoring/` (single root only; not
+duplicated into `.claude/skills/`, `.opencode/skills/`, or any other root).
+
+Issue #18 (core bootstrap) recorded a temporary `not installed` override
+while deferring the actual file install to a follow-up issue. Issue #28
+fetched the companion files (`SKILL.md` and the three `references/*.md`
+files) from the pinned upstream commit
+`adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d`, installed them byte-identical
+at the destination above, and flipped this status to `installed`.
 
 ## Helper Runtime Profile
 

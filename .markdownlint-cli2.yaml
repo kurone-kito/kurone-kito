@@ -1,3 +1,7 @@
 ignores:
   - .github/CODE_OF_CONDUCT*
   - node_modules/**/*.md
+  # Byte-identical third-party copy from the pinned upstream idd-skill
+  # commit (see docs/idd-policy.md's Issue-Authoring Companion section);
+  # never reflow, since edits would break byte-identity with the source.
+  - .agents/skills/issue-authoring/**
