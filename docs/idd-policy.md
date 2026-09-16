@@ -51,12 +51,18 @@ By default, a `404` from the branch-protection or ruleset read
 endpoints is treated as unreadable (same as a `403`), since neither
 endpoint documents `403` as a possible response and a `404` can mask a
 permission failure. This repository's automation token was verified to
-carry full read access to these endpoints
-(`repos/kurone-kito/kurone-kito` permissions report `admin: true`, and
-the rulesets list endpoint returns `200`), and this repository has no
-classic branch protection configured — it relies on rulesets only, so
-the classic-protection `404` is genuinely empty rather than a
-permission gap. This mirrors the "no required-status-check rule"
+carry full read access to every endpoint this flag makes fail-open:
+`repos/kurone-kito/kurone-kito` permissions report `admin: true`; the
+rulesets **list** endpoint (`GET /repos/{owner}/{repo}/rulesets`)
+returns `200`; and the rulesets **detail** endpoint (`GET
+/repos/{owner}/{repo}/rulesets/{id}`) also returns `200` for both of
+this repository's current rulesets (id `20747408`, "main"; id
+`20747418`, "features") — a ruleset-list `200` alone does not prove the
+per-ruleset detail read is authorized, so this was checked separately.
+This repository has no classic branch protection configured — it
+relies on rulesets only, so the classic-protection `404` is genuinely
+empty rather than a permission gap. This mirrors the "no
+required-status-check rule"
 gap already disclosed and accepted during #18's bootstrap hearing (see
 Merge Policy above and issue #31, which tracks adding an actual
 GitHub-enforced required-check gate). This opt-in is not a permanent
@@ -66,7 +72,8 @@ regression in the automation token's endpoint access (a scope change,
 a re-issued token, an org policy change) could make a genuinely
 unreadable state look like "no required checks configured" instead of
 holding. Revalidate this flag (repeat the `admin: true` /
-rulesets-`200` check above) after any change to the automation token's
+rulesets-list-`200` / rulesets-detail-`200` checks above) after any
+change to the automation token's
 permissions or this repository's branch-protection/ruleset
 configuration, and revisit it once #31 lands enforced branch
 protection.
