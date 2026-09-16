@@ -125,3 +125,28 @@ newer upstream commit — do not let it drift silently.
 ## Bootstrap Execution Mode
 
 **Mode**: `issue-mediated`
+
+## Worktree Guard
+
+**Status**: `enabled` (`worktreeGuard.enabled: true`,
+`worktreeGuard.refuseBaseBranchCommits: false` in
+`.github/idd/config.json`). The opt-in `.githooks/` hook set refuses a
+commit or push made from the **primary** worktree while `HEAD` is on an
+implementation branch (`issue/*` or `roadmap-audit/*`), enforcing the B1
+disposable-worktree rule locally. `refuseBaseBranchCommits` stays `false`
+by intentional choice, as decided in #19: the repository's base branch
+(`master`) remains committable directly from the primary worktree;
+enabling the stricter mode is left to a separate, not-yet-filed future
+policy decision.
+
+`core.hooksPath` is local, per-clone git configuration and is **not**
+committed — each fresh clone or ephemeral agent checkout must run
+
+```sh
+git config core.hooksPath .githooks
+```
+
+once to wire the guard. See
+[docs/onboarding/optional-host-setup.md](onboarding/optional-host-setup.md#optional--enable-the-local-worktree-guard)
+for the full per-clone activation steps, Windows caveats, and how to
+coexist with an existing hook manager.

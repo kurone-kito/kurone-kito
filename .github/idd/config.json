@@ -40,5 +40,9 @@
     "profile": "ephemeral-npx",
     "packageSpec": "github:kurone-kito/idd-skill#adad8ae43c5a1b6fc3a100ce384c8a84a8d5139d"
   },
-  "developmentBranch": "master"
+  "developmentBranch": "master",
+  "worktreeGuard": {
+    "enabled": true,
+    "refuseBaseBranchCommits": false
+  }
 }
