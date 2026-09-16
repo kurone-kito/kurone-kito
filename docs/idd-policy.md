@@ -41,6 +41,28 @@ read/write, actions read); no publish or deployment secrets required`
   confirmed by this hearing item)
 - **rerun policy**: `rerun-once`
 
+## Required-Check-Read Trust
+
+**Policy**: `ciGate.trustEmptyProtectionReads: true` (recorded
+2026-09-16, in response to issue #19's PR #32 first hitting the F2 gate
+under the fail-closed default).
+
+By default, a `404` from the branch-protection or ruleset read
+endpoints is treated as unreadable (same as a `403`), since neither
+endpoint documents `403` as a possible response and a `404` can mask a
+permission failure. This repository's automation token was verified to
+carry full read access to these endpoints
+(`repos/kurone-kito/kurone-kito` permissions report `admin: true`, and
+the rulesets list endpoint returns `200`), and this repository has no
+classic branch protection configured — it relies on rulesets only, so
+the classic-protection `404` is genuinely empty rather than a
+permission gap. This mirrors the "no required-status-check rule"
+gap already disclosed and accepted during #18's bootstrap hearing (see
+Merge Policy above and issue #31, which tracks adding an actual
+GitHub-enforced required-check gate). Revisit this flag once #31 lands
+enforced branch protection — it may become unnecessary once a genuine
+`200` read is always available, but there is no harm in leaving it set.
+
 ## Issue-Author Approval Gate
 
 **Selection**: `enabled-by-default`
