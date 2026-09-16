@@ -97,9 +97,10 @@ newer upstream commit — do not let it drift silently.
 commit or push made from the **primary** worktree while `HEAD` is on an
 implementation branch (`issue/*` or `roadmap-audit/*`), enforcing the B1
 disposable-worktree rule locally. `refuseBaseBranchCommits` stays `false`
-by intentional choice: the repository's base branch (`master`) remains
-committable directly from the primary worktree; enabling the stricter
-mode is a separate future policy decision (#19).
+by intentional choice, as decided in #19: the repository's base branch
+(`master`) remains committable directly from the primary worktree;
+enabling the stricter mode is left to a separate, not-yet-filed future
+policy decision.
 
 `core.hooksPath` is local, per-clone git configuration and is **not**
 committed — each fresh clone or ephemeral agent checkout must run
