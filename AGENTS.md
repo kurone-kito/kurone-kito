@@ -28,6 +28,10 @@ See [docs/idd-policy.md](docs/idd-policy.md) for this repository's
 recorded IDD policy decisions (merge policy, review policy, credential
 scope, and the rest).
 
+The issue-authoring companion skill, which drafts or refines IDD-ready
+issues, roadmaps, and sub-issues before execution starts, is installed
+at [.agents/skills/issue-authoring/](.agents/skills/issue-authoring/).
+
 This file is the shared entry point for Codex CLI, OpenCode, and Grok
 Build — each auto-loads `AGENTS.md` from the repository root natively,
 so no dedicated `GROK.md` is created.
