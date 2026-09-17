@@ -3,6 +3,7 @@
   "iddVersion": "0.11.0",
   "markerPrefix": "kurone-kito",
   "mergePolicy": "fully_autonomous_merge",
+  "mergePolicyAck": "fully_autonomous_merge",
   "reviewPolicy": "copilot-advisory",
   "threadResolutionPolicy": "fast-agent-resolve",
   "claimTiming": {
