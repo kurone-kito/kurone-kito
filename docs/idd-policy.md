@@ -33,6 +33,11 @@ explicitly authorized action outside the normal autonomous IDD claim/A4.5
 scope — see the Credential Scope section below, which this repository's
 autonomous IDD sessions remain bound by.
 
+**Acknowledgment recorded (2026-09-17, issue #40)**: `mergePolicyAck:
+"fully_autonomous_merge"` is now set in `.github/idd/config.json`,
+confirming the opt-in already documented above and silencing
+`idd-doctor`'s diagnostics-only reminder.
+
 ## PR Review Policy
 
 **Profile**: `copilot-advisory`
