@@ -3,8 +3,8 @@
 Hi there 👋  
 I'm web frontend engineer and VTuber 🐱
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?border_color=036&border_radius=28&count_private=true&include_all_commits=true&line_height=24&show_icons=true&theme=tokyonight&username=kurone-kito)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?border_color=036&border_radius=28&card_width=445&count_private=true&exclude_repo=mic-test-for-oculus-quest&langs_count=8&layout=compact&show_icons=true&theme=tokyonight&username=kurone-kito)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-stats-extended.vercel.app/api?border_color=036&border_radius=28&count_private=true&include_all_commits=true&line_height=24&show_icons=true&theme=tokyonight&username=kurone-kito)](https://github.com/stats-organization/github-stats-extended)
+[![Top Langs](https://github-stats-extended.vercel.app/api/top-langs/?border_color=036&border_radius=28&card_width=445&count_private=true&exclude_repo=mic-test-for-oculus-quest&langs_count=8&layout=compact&show_icons=true&theme=tokyonight&username=kurone-kito)](https://github.com/stats-organization/github-stats-extended)
 
 ## My products
 
